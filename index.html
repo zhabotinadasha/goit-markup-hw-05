@@ -590,21 +590,23 @@
         </div>
         <div class="footer-form-wrapper">
           <p class="footer-form-text">Subscribe</p>
-          <form class="footer-form" name="review"></form>
-          <input
-            class="footer-modal-form-input"
-            type="text"
-            id="email"
-            name="email"
-            placeholder="E-mail"
-          />
+          <form class="footer-form" name="review">
+            <label class="footer-modal-form-label" for="email"></label>
+            <input
+              class="footer-modal-form-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
-        <button class="footer-btn" type="button">
-          Subscribe
-          <svg class="footer-icon" width="24" height="20">
-            <use href="./images/icons.svg#icon-icon-send"></use>
-          </svg>
-        </button>
       </div>
     </footer>
 
