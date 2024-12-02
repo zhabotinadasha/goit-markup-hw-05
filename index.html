@@ -611,9 +611,9 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
-        <button class="modal-btn" type="button">
+        <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -636,7 +636,6 @@
               </svg>
             </div>
           </div>
-
           <div class="modal-form-field">
             <label class="modal-form-label" for="user-phone">Phone</label>
             <div class="modal-form-wrapper">
@@ -651,7 +650,6 @@
               </svg>
             </div>
           </div>
-
           <div class="modal-form-field">
             <label class="modal-form-label" for="user-email">Email</label>
             <div class="modal-form-wrapper">
@@ -666,7 +664,6 @@
               </svg>
             </div>
           </div>
-
           <div class="modal-form-field">
             <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
@@ -681,21 +678,20 @@
             <input
               class="visually-hidden"
               type="checkbox"
-              name="user-privacy"
-              id="user-privacy"
+              name="user-agreement"
+              id="user-agreement"
               value="true"
             />
-            <label class="modal-form-agreement-text" for="user-privacy">
+            <label class="modal-form-agreement-text" for="user-agreement">
               <span class="modal-form-checkbox">
                 <svg class="modal-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="#" class="modal-form-agreement-link">Privacy Policy</a>
+              <a class="modal-form-agreement-link" href="#">Privacy Policy</a>
             </label>
           </div>
-
           <button class="btn hero-btn" type="button">Send</button>
         </form>
       </div>
